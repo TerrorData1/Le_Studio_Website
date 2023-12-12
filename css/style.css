@@ -108,7 +108,3 @@ header .carousel-indicators [data-bs-target] {
     background-color: #fcfcfc;
     color: transparent;
 }
-
-.w-100 {
-    min-height: 984px;
-}
