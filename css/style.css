@@ -35,6 +35,10 @@ ul li {
   Custom
   ========================================================================== */
 
+.w-90 {
+    width: 90%;
+}
+
 header {
     width: 100%;
     background-color: #373737;
@@ -52,12 +56,11 @@ header svg {
 
     top: 0;
     left: 0;
-
-    width: 100%;
 }
 
-.nav_container svg {
-    height: 20px;
+.navbar-brand {
+    padding: 0;
+    margin: 0;
 }
 
 .navbar {
@@ -70,18 +73,45 @@ header svg {
     cursor: pointer;
 }
 
-.nav-link {
-    padding: 34px 24px;
+.navbar-nav:nth-child(1) .nav-link {
+    padding: 1.96rem 1.5rem !important;
     font-size: 18px;
     font-weight: 400;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus,
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
+.navbar-nav:nth-child(2),
+.navbar-nav:nth-child(3)  {
+    padding-top: 1.96rem;
+    padding-bottom: 1.96rem;
+}
+
+.navbar-nav:nth-child(2) .nav-link,
+.navbar-nav:nth-child(3) .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-nav:nth-child(1) .nav-link:hover,
+.navbar-nav:nth-child(1) .nav-link:focus,
+.navbar-nav:nth-child(1) .nav-link.active,
+.navbar-nav:nth-child(1) .nav-link.show {
     color: white;
     background-color: #CBAC6B;
+}
+
+.navbar-nav.icon-link .nav-link:hover,
+.navbar-nav.icon-link .nav-link:focus,
+.navbar-nav.icon-link .nav-link.active,
+.navbar-nav.icon-link .nav-link.show {
+    color: #CBAC6B;
+}
+
+.navbar-nav:nth-child(2).icon-link svg{
+    padding-right: 5px;
+}
+
+.navbar-nav.icon-link svg {
+    height: 20px;
 }
 
 /* Icone sélection langue */
@@ -120,7 +150,6 @@ header .carousel-indicators [data-bs-target] {
     color: transparent;
 }
 
-
 .dropdown-menu {
     background-color: black;
     border-radius: initial;
@@ -133,7 +162,6 @@ header .carousel-indicators [data-bs-target] {
 
 .carousel-caption h1 {
     font-size: 52px;
-
 }
 
 .carousel-caption .hidden {
@@ -154,11 +182,9 @@ header .carousel-indicators [data-bs-target] {
     text-transform: uppercase;
 }
 
-
 .btn.btn-lg {
     background-color: transparent;
     border: 1px solid white;
     border-radius: initial;
     color: white;
-
 }
