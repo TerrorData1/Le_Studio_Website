@@ -1,3 +1,114 @@
+/* ==========================================================================
+  Import CSS
+  ========================================================================== */
+/* Google Fonts Oswald & Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+/* ==========================================================================
+  Base
+  ========================================================================== */
+
 body {
-    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+/*
+  primary-color : 
+*/
+
+/* ==========================================================================
+  Custom
+  ========================================================================== */
+
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+header {
+    width: 100%;
+}
+
+.nav_container {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.nav_container svg {
+    height: 20px;
+}
+
+.navbar {
+    padding-top: 0;
+}
+
+.navbar a {
+    text-transform: uppercase;
+    color: #fcfcfc;
+    cursor: pointer;
+}
+
+/* Icone sélection langue */
+
+.lang {
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 46px;
+    padding-bottom: 10px;
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    background-color: #CBAC6B;
+    text-decoration: underline;
+}
+
+.lang a {
+    color: #000;
+}
+
+
+/* ===============================================
+  Carrousel
+  ===============================================*/
+
+header .carousel-indicators [data-bs-target].active {
+    border: 2px solid #fcfcfc;
+    background-color: transparent;
+}
+
+header .carousel-indicators [data-bs-target] {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fcfcfc;
+    border-radius: 50%;
+    background-color: #fcfcfc;
+    color: transparent;
+}
+
+.w-100 {
+    min-height: 984px;
 }
