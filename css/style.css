@@ -139,8 +139,8 @@ header svg {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    color: white;
-    background-color: #CBAC6B;
+    color: #CBAC6B;
+    background-color: initial;
 }
 
 /* ===============================================
