@@ -157,9 +157,59 @@
 
                 </section>
             </aside>
+            
             <section class="col">
-                <h2>Formulaire de contact</h2>
                 
+                <h2>Formulaire de contact</h2>
+
+                <form class="row">
+                    <div class="col-7 form-floating mb-3">
+                        <input type="text" class="form-control" id="lname" placeholder="Votre nom" required>
+                        <label for="lname">Votre nom</label>
+                        <div class="invalid-feedback">
+                            Veuillez saisir votre nom.
+                        </div>
+                    </div>
+                    <div class="col-5 form-floating mb-3">
+                        <input type="text" class="form-control" id="fname" placeholder="Votre prénom" required>
+                        <label for="fname">Votre prénom</label>
+                        <div class="invalid-feedback">
+                            Veuillez saisir votre prénom.
+                        </div>
+                    </div>
+
+                    <div class="col-4 form-floating mb-3">
+                        <input type="tel" class="form-control" id="tel" placeholder="Votre téléphone" required>
+                        <label for="tel">Votre téléphone</label>
+                        <div class="invalid-feedback">
+                            Veuillez saisir un numéro de téléphone valide.
+                        </div>
+                    </div>
+                    <div class="col-6 form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                        <label for="email">Votre email</label>
+                        <div class="invalid-feedback">
+                            Veuillez saisir un email valide.
+                        </div>
+                    </div>
+                    <div class="col-12 form-floating mb-3">
+                        <input type="text" class="form-control" id="subject" placeholder="Sujet" required>
+                        <label for="subject">Sujet</label>
+                        <div class="invalid-feedback">
+                            Veuillez saisir un sujet dans le champ de texte
+                        </div>
+                    </div>
+                    <div class="col-12 form-floating">
+                        <textarea class="form-control" placeholder="Votre message" id="message" required></textarea>
+                        <label for="message">Votre message</label>
+                    </div>
+                    <div class="invalid-feedback">
+                        Veuillez saisir un message dans la zone de texte.
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Envoyer</button>
+                    </div>
+                </form>
             </section>
         </div>
     </main>
