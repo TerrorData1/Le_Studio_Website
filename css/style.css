@@ -136,6 +136,12 @@ header svg {
     background-color: #141414 !important;
 }
 
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: white;
+    background-color: #CBAC6B;
+}
+
 /* ===============================================
   Carrousel
   ===============================================*/
