@@ -69,6 +69,7 @@ header svg {
 
 .navbar a {
     text-transform: uppercase;
+    white-space: nowrap;
     color: #fcfcfc;
     cursor: pointer;
 }
