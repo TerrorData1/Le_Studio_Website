@@ -20,6 +20,7 @@ h3,
 header {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 
@@ -42,7 +43,6 @@ ul li {
 header {
     width: 100%;
     background-color: #373737;
-    text-transform: uppercase;
 }
 
 header svg {
@@ -199,3 +199,37 @@ header .carousel-indicators [data-bs-target] {
     border-radius: initial;
     color: white;
 }
+
+
+/* ==========================================================================
+  Header - Background
+  ========================================================================== */
+
+#contact header,
+#presentation header {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+}
+
+#contact header {
+    background-image: url(../assets/img/visuel/header_contact.jpg);
+}
+
+#presentation header {
+    background-image: url(../assets/img/visuel/header_presentation.jpg);
+}
+
+#contact main h2,
+#presentation main h2 {
+    font-size: 28px;
+    padding-bottom: 16px;
+    background: bottom center no-repeat url(../assets/img/bg_titre.jpg);
+}
+
+#contact main h2 {
+    background-position: left;
+}
+
+
