@@ -4,7 +4,6 @@
 /* Google Fonts Oswald & Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-
 /* ==========================================================================
   Base
   ========================================================================== */
@@ -81,7 +80,7 @@ header svg {
 }
 
 .navbar-nav:nth-child(2),
-.navbar-nav:nth-child(3)  {
+.navbar-nav:nth-child(3) {
     padding-top: 1.96rem;
     padding-bottom: 1.96rem;
 }
@@ -107,7 +106,7 @@ header svg {
     color: #CBAC6B;
 }
 
-.navbar-nav:nth-child(2).icon-link svg{
+.navbar-nav:nth-child(2).icon-link svg {
     padding-right: 5px;
 }
 
@@ -200,6 +199,25 @@ header .carousel-indicators [data-bs-target] {
     color: white;
 }
 
+/* Burger Bouton and Close - Change color and remove border */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.btn-close {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgba(255, 255, 255, 1)'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus,
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
 
 /* ==========================================================================
   Header - Background
@@ -231,5 +249,3 @@ header .carousel-indicators [data-bs-target] {
 #contact main h2 {
     background-position: bottom left;
 }
-
-
