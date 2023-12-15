@@ -8,6 +8,10 @@
   Base
   ========================================================================== */
 
+/* * {
+    border: 1px solid red;
+} */
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -39,130 +43,79 @@ ul li {
     width: 90%;
 }
 
-header {
-    width: 100%;
-    background-color: #373737;
-}
-
-header svg {
-    height: 20px;
-}
-
-.nav_container {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-
-    top: 0;
-    left: 0;
-}
-
-.navbar-brand {
-    padding: 0;
-    margin: 0;
-}
-
-.navbar {
-    padding-top: 0;
-}
-
-.navbar a {
-    text-transform: uppercase;
-    white-space: nowrap;
-    color: #fcfcfc;
-    cursor: pointer;
-}
-
-.navbar-nav:nth-child(1) .nav-link {
-    padding: 1.96rem 1.5rem !important;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.navbar-nav:nth-child(2),
-.navbar-nav:nth-child(3) {
+.py-custom {
     padding-top: 1.96rem;
     padding-bottom: 1.96rem;
 }
 
-.navbar-nav:nth-child(2) .nav-link,
-.navbar-nav:nth-child(3) .nav-link {
-    padding-top: 0;
-    padding-bottom: 0;
+.bg-gold {
+    background-color: #CBAC6B;
 }
 
-.navbar-nav:nth-child(1) .nav-link:hover,
-.navbar-nav:nth-child(1) .nav-link:focus,
-.navbar-nav:nth-child(1) .nav-link.active,
-.navbar-nav:nth-child(1) .nav-link.show {
+.bg-goldgrey {
+    background-color: #373737;
+}
+
+.navbar-gold-hover-color .nav-link:is(:hover, :focus, .active, .show) {
     color: white;
     background-color: #CBAC6B;
 }
 
-.navbar-nav.icon-link .nav-link:hover,
-.navbar-nav.icon-link .nav-link:focus,
-.navbar-nav.icon-link .nav-link.active,
-.navbar-nav.icon-link .nav-link.show {
+.link-gold:is(:hover, :focus, .active, .show) {
     color: #CBAC6B;
 }
 
-.navbar-nav:nth-child(2).icon-link svg {
-    padding-right: 5px;
+.link-goldgrey {
+    color: #373737 !important;
 }
 
-.navbar-nav.icon-link svg {
-    height: 20px;
+.nav-link svg {
+    height: 1.25rem;
+}
+
+.nav_container {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+}
+
+.navbar a {
+    color: #fcfcfc;
+    cursor: pointer;
+}
+
+.dropdown-black-bg {
+    background-color: black;
 }
 
 /* Icone sélection langue */
 
 .lang {
-    top: 0;
-    right: 0;
-    width: 35px;
-    height: 46px;
-    padding-bottom: 10px;
+    height: 2.875rem;
     clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
-    background-color: #CBAC6B;
-    text-decoration: underline;
 }
-
-.lang a {
-    color: #373737;
-}
-
 
 .offcanvas.show {
     background-color: #141414 !important;
 }
 
-.dropdown-item:hover,
-.dropdown-item:focus {
-    color: #CBAC6B;
-    background-color: initial;
-}
+
 
 /* ===============================================
   Carrousel
   ===============================================*/
 
-header .carousel-indicators [data-bs-target].active {
+.circle-indicators.carousel-indicators [data-bs-target].active {
     border: 2px solid #fcfcfc;
     background-color: transparent;
 }
 
-header .carousel-indicators [data-bs-target] {
+.circle-indicators.carousel-indicators [data-bs-target] {
     width: 16px;
     height: 16px;
     border: 2px solid #fcfcfc;
     border-radius: 50%;
     background-color: #fcfcfc;
     color: transparent;
-}
-
-.dropdown-menu {
-    background-color: black;
-    border-radius: initial;
 }
 
 .carousel-caption {
@@ -182,28 +135,22 @@ header .carousel-indicators [data-bs-target] {
     margin-bottom: 225px;
 }
 
-.carousel-caption .subtitle {
+/* .carousel-caption .subtitle {
     font-size: 32px;
     font-weight: 400;
-}
+} */
 
 .carousel-caption .call-to-action {
     margin-top: 100px;
     text-transform: uppercase;
 }
 
-.btn.btn-lg {
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: initial;
-    color: white;
-}
+
 
 /* Burger Bouton and Close - Change color and remove border */
 
 .navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
+.navbar-toggler:is(:focus, :active),
 .navbar-toggler-icon:focus,
 .btn-close:focus {
     outline: none;
@@ -249,4 +196,34 @@ header .carousel-indicators [data-bs-target] {
 
 #contact main h2 {
     background-position: bottom left;
+}
+
+/* ==========================================================================
+  Main
+  ========================================================================== */
+
+  /*
+    Activities
+    ========================================================================== */
+
+.activs div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.activs-01 {
+    background-image: url(../assets/img/activites/bg_activite_1.jpg);
+}
+
+.activs-02 {
+    background-image: url(../assets/img/activites/bg_activite_2.jpg);
+}
+
+.activs-03 {
+    background-image: url(../assets/img/activites/bg_activite_3.jpg);
+}
+
+.activs-04 {
+    background-image: url(../assets/img/activites/bg_activite_4.jpg);
 }
