@@ -61,8 +61,8 @@ ul li {
     background-color: #CBAC6B;
 }
 
-.link-gold:is(:hover, :focus, .active, .show) {
-    color: #CBAC6B;
+.link-gold a:is(:hover, :focus, .active, .show) {
+    color: #CBAC6B !important;
 }
 
 .link-goldgrey {
@@ -97,7 +97,6 @@ ul li {
 .offcanvas.show {
     background-color: #141414 !important;
 }
-
 
 
 /* ===============================================
@@ -135,17 +134,10 @@ ul li {
     margin-bottom: 225px;
 }
 
-/* .carousel-caption .subtitle {
-    font-size: 32px;
-    font-weight: 400;
-} */
-
 .carousel-caption .call-to-action {
     margin-top: 100px;
     text-transform: uppercase;
 }
-
-
 
 /* Burger Bouton and Close - Change color and remove border */
 
@@ -226,4 +218,22 @@ ul li {
 
 .activs-04 {
     background-image: url(../assets/img/activites/bg_activite_4.jpg);
+}
+
+
+/* ==========================================================================
+  Footer
+  ========================================================================== */
+
+.trait {
+    width: 40px;
+    position: relative;
+}
+
+.galeriefoot {
+    height: 396px;
+}
+
+.insta-slider > div > a:hover {
+    opacity: 0.5;
 }
