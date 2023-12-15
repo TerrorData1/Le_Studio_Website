@@ -20,6 +20,8 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
 header {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
@@ -43,9 +45,18 @@ ul li {
     width: 90%;
 }
 
+.ff-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
 .py-custom {
     padding-top: 1.96rem;
     padding-bottom: 1.96rem;
+}
+
+.py-10 {
+    padding-top: 6.375rem;
+    padding-bottom: 6.375rem;
 }
 
 .bg-gold {
@@ -56,12 +67,21 @@ ul li {
     background-color: #373737;
 }
 
+.bg-darkbrown {
+    background-color: #282828;
+}
+
+.bg-darkerbrown {
+    background-color: #141414;
+}
+
 .navbar-gold-hover-color .nav-link:is(:hover, :focus, .active, .show) {
     color: white;
     background-color: #CBAC6B;
 }
 
-.link-gold a:is(:hover, :focus, .active, .show) {
+.link-gold a,
+.link-hover-gold a:is(:hover, :focus, .active, .show) {
     color: #CBAC6B !important;
 }
 
@@ -167,7 +187,7 @@ ul li {
 #presentation header {
     height: 500px;
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: center;
     background-size: cover;
 }
 
@@ -194,9 +214,9 @@ ul li {
   Main
   ========================================================================== */
 
-  /*
-    Activities
-    ========================================================================== */
+/*
+  Activities
+  ========================================================================== */
 
 .activs div {
     background-position: center;
@@ -220,13 +240,21 @@ ul li {
     background-image: url(../assets/img/activites/bg_activite_4.jpg);
 }
 
+/*
+  Presentation
+  ========================================================================== */
+
+.carousel-item {
+    height: 400px;
+}
+
 
 /* ==========================================================================
   Footer
   ========================================================================== */
 
 .trait {
-    width: 40px;
+    width: 26px;
     position: relative;
 }
 
