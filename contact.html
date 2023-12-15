@@ -144,93 +144,100 @@
 
     </header>
 
-    <main class="container py-5">
-        <div class="row">
-            <aside class="col-4">
-                <section>
-                    <h2>Nos coordonnées</h2>
-                    <h3>Studio Sport & Coaching</h3>
-                    <address>
-                        01 Allée Marie Politzer<br>
-                        64200 Biarritz
-                    </address>
+    <div class="py-5">
+        <div class="container py-5">
+            <div class="row">
+                <aside class="col-4">
+                    <section>
+                        <h2>Nos coordonnées</h2>
+                        <h3>Studio Sport & Coaching</h3>
+                        <address>
+                            01 Allée Marie Politzer<br>
+                            64200 Biarritz
+                        </address>
 
-                    <h3>Téléphone</h3>
-                    <address>
-                        <a href="tel:+33559478418">05 59 47 84 18</a>
-                    </address>
+                        <h3>Téléphone</h3>
+                        <address>
+                            <a href="tel:+33559478418">05 59 47 84 18</a>
+                        </address>
 
-                    <h3>Horaires</h3>
-                    <p>
-                        Du lundi au vendredi<br>
-                        de 8h à 14h, de 16h à 21h<br>
-                        Le samedi<br>
-                        de 10h à 13h
-                    </p>
+                        <h3>Horaires</h3>
+                        <p>
+                            Du lundi au vendredi<br>
+                            de 8h à 14h, de 16h à 21h<br>
+                            Le samedi<br>
+                            de 10h à 13h
+                        </p>
 
-                    <h3>Email</h3>
-                    <address>
-                        <a href="mailto:contact@studiobiarritz.com">contact (at) studiobiarritz.com</a><br>
-                        ou via ce formulaire
-                    </address>
+                        <h3>Email</h3>
+                        <address>
+                            <a href="mailto:contact@studiobiarritz.com">contact (at) studiobiarritz.com</a><br>
+                            ou via ce formulaire
+                        </address>
 
 
+                    </section>
+                </aside>
+
+                <section class="col">
+
+                    <h2>Formulaire de contact</h2>
+
+                    <form class="row">
+                        <div class="col-7 form-floating mb-3">
+                            <input type="text" class="form-control" id="lname" placeholder="Votre nom" required>
+                            <label for="lname">Votre nom</label>
+                            <div class="invalid-feedback">
+                                Veuillez saisir votre nom.
+                            </div>
+                        </div>
+                        <div class="col-5 form-floating mb-3">
+                            <input type="text" class="form-control" id="fname" placeholder="Votre prénom" required>
+                            <label for="fname">Votre prénom</label>
+                            <div class="invalid-feedback">
+                                Veuillez saisir votre prénom.
+                            </div>
+                        </div>
+
+                        <div class="col-4 form-floating mb-3">
+                            <input type="tel" class="form-control" id="tel" placeholder="Votre téléphone" required>
+                            <label for="tel">Votre téléphone</label>
+                            <div class="invalid-feedback">
+                                Veuillez saisir un numéro de téléphone valide.
+                            </div>
+                        </div>
+                        <div class="col-6 form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                            <label for="email">Votre email</label>
+                            <div class="invalid-feedback">
+                                Veuillez saisir un email valide.
+                            </div>
+                        </div>
+                        <div class="col-12 form-floating mb-3">
+                            <input type="text" class="form-control" id="subject" placeholder="Sujet" required>
+                            <label for="subject">Sujet</label>
+                            <div class="invalid-feedback">
+                                Veuillez saisir un sujet dans le champ de texte
+                            </div>
+                        </div>
+                        <div class="col-12 form-floating">
+                            <textarea class="form-control" placeholder="Votre message" id="message" required></textarea>
+                            <label for="message">Votre message</label>
+                        </div>
+                        <div class="invalid-feedback">
+                            Veuillez saisir un message dans la zone de texte.
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Envoyer</button>
+                        </div>
+                    </form>
                 </section>
-            </aside>
-
-            <section class="col">
-
-                <h2>Formulaire de contact</h2>
-
-                <form class="row">
-                    <div class="col-7 form-floating mb-3">
-                        <input type="text" class="form-control" id="lname" placeholder="Votre nom" required>
-                        <label for="lname">Votre nom</label>
-                        <div class="invalid-feedback">
-                            Veuillez saisir votre nom.
-                        </div>
-                    </div>
-                    <div class="col-5 form-floating mb-3">
-                        <input type="text" class="form-control" id="fname" placeholder="Votre prénom" required>
-                        <label for="fname">Votre prénom</label>
-                        <div class="invalid-feedback">
-                            Veuillez saisir votre prénom.
-                        </div>
-                    </div>
-
-                    <div class="col-4 form-floating mb-3">
-                        <input type="tel" class="form-control" id="tel" placeholder="Votre téléphone" required>
-                        <label for="tel">Votre téléphone</label>
-                        <div class="invalid-feedback">
-                            Veuillez saisir un numéro de téléphone valide.
-                        </div>
-                    </div>
-                    <div class="col-6 form-floating mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="Votre email" required>
-                        <label for="email">Votre email</label>
-                        <div class="invalid-feedback">
-                            Veuillez saisir un email valide.
-                        </div>
-                    </div>
-                    <div class="col-12 form-floating mb-3">
-                        <input type="text" class="form-control" id="subject" placeholder="Sujet" required>
-                        <label for="subject">Sujet</label>
-                        <div class="invalid-feedback">
-                            Veuillez saisir un sujet dans le champ de texte
-                        </div>
-                    </div>
-                    <div class="col-12 form-floating">
-                        <textarea class="form-control" placeholder="Votre message" id="message" required></textarea>
-                        <label for="message">Votre message</label>
-                    </div>
-                    <div class="invalid-feedback">
-                        Veuillez saisir un message dans la zone de texte.
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Envoyer</button>
-                    </div>
-                </form>
-            </section>
+            </div>
+        </div>
+        <div class="gMap bg-black mt-5">
+            <iframe class="w-100 border-0 d-block"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5597709.34892498!2d1.7382809999999997!3d46.75984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1702668532072!5m2!1sfr!2sfr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
 
@@ -239,13 +246,16 @@
 
         <div class="insta-slider row align-items-start g-0 position-relative">
             <div class="col-md-2 ">
-                <a href="#"><img src="./assets/img/coach/coach_1.jpg" alt="Photo" class="galeriefoot img-fluid w-100"></a>
+                <a href="#"><img src="./assets/img/coach/coach_1.jpg" alt="Photo"
+                        class="galeriefoot img-fluid w-100"></a>
             </div>
             <div class="col-md-2">
-                <a href="#"> <img src="./assets/img/coach/coach_2.jpg" alt="Photo" class="galeriefoot img-fluid w-100"></a>
+                <a href="#"> <img src="./assets/img/coach/coach_2.jpg" alt="Photo"
+                        class="galeriefoot img-fluid w-100"></a>
             </div>
             <div class="col-md-2">
-                <a href="#"> <img src="./assets/img/coach/coach_3.jpg" alt="Photo" class="galeriefoot img-fluid w-100"></a>
+                <a href="#"> <img src="./assets/img/coach/coach_3.jpg" alt="Photo"
+                        class="galeriefoot img-fluid w-100"></a>
             </div>
             <div class="col-md-2">
                 <a href="#" class="w-100"> <img src="./assets/img/coach/julie-coach-fitness-biarritz.jpg " alt="Photo"
@@ -273,7 +283,8 @@
                 </div>
 
                 <p class="mb-md-0">
-                    <a href="#" class="d-block fw-semibold text-decoration-none text-white">2018 © Studio Sport Biarritz</a>
+                    <a href="#" class="d-block fw-semibold text-decoration-none text-white">2018 © Studio Sport
+                        Biarritz</a>
                     Salle de sport, de fitness et de crossfit à Biarritz Pays basque.<br>
                     RCS : 000 000 000
                     <a href="#" class="d-block text-white fw-semibold">Mention légales</a>
@@ -303,7 +314,8 @@
                 <h5 class="my-3 text-uppercase">FITNESS, CROSSFIT ET TRAINING AU PAYS BASQUE</h5>
 
                 <p class="fw-semibold lh-lg">
-                    Coach personnel de sport à Biarritz, <a href="#" class="text-white text-decoration-none">Coach personnel de sport à Anglet</a>, Salle
+                    Coach personnel de sport à Biarritz, <a href="#" class="text-white text-decoration-none">Coach
+                        personnel de sport à Anglet</a>, Salle
                     de sport BAB, Fitness à Biarritz, Sessions de fitness de Anglet, Fitness sur le BAB, <br>
                     Autre mot clé + ville, Autre mot clé + ville,Autre mot clé + ville.</p>
             </div>
