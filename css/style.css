@@ -255,9 +255,9 @@ ul li {
 /*
   Google Maps
   ========================================================================== */
-  .gMap iframe {
+.gMap {
     height: 668px;
-    filter: grayscale(100%) invert(100%);
+    background: center / cover no-repeat url(../assets/img/map.webp);
 }
 
 /* ==========================================================================
