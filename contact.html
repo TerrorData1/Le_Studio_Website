@@ -84,7 +84,8 @@
                                     <a class="nav-link py-custom px-4 text-nowrap" href="#">Le Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link py-custom px-4 text-nowrap active" href="contact.html" aria-current="page">Contact</a>
+                                    <a class="nav-link py-custom px-4 text-nowrap active" href="contact.html"
+                                        aria-current="page">Contact</a>
                                 </li>
                             </ul>
 
@@ -142,99 +143,104 @@
         </div>
 
     </header>
+    
+    <main>
+        <div class="py-5">
+            <div class="container py-5">
+                <div class="row">
+                    <aside class="col-4">
+                        <section>
+                            <h2>Nos coordonnées</h2>
+                            <h3>Studio Sport & Coaching</h3>
+                            <address>
+                                01 Allée Marie Politzer<br>
+                                64200 Biarritz
+                            </address>
 
-    <div class="py-5">
-        <div class="container py-5">
-            <div class="row">
-                <aside class="col-4">
-                    <section>
-                        <h2>Nos coordonnées</h2>
-                        <h3>Studio Sport & Coaching</h3>
-                        <address>
-                            01 Allée Marie Politzer<br>
-                            64200 Biarritz
-                        </address>
+                            <h3>Téléphone</h3>
+                            <address>
+                                <a href="tel:+33559478418">05 59 47 84 18</a>
+                            </address>
 
-                        <h3>Téléphone</h3>
-                        <address>
-                            <a href="tel:+33559478418">05 59 47 84 18</a>
-                        </address>
+                            <h3>Horaires</h3>
+                            <p>
+                                Du lundi au vendredi<br>
+                                de 8h à 14h, de 16h à 21h<br>
+                                Le samedi<br>
+                                de 10h à 13h
+                            </p>
 
-                        <h3>Horaires</h3>
-                        <p>
-                            Du lundi au vendredi<br>
-                            de 8h à 14h, de 16h à 21h<br>
-                            Le samedi<br>
-                            de 10h à 13h
-                        </p>
-
-                        <h3>Email</h3>
-                        <address>
-                            <a href="mailto:contact@studiobiarritz.com">contact (at) studiobiarritz.com</a><br>
-                            ou via ce formulaire
-                        </address>
+                            <h3>Email</h3>
+                            <address>
+                                <a href="mailto:contact@studiobiarritz.com">contact (at) studiobiarritz.com</a><br>
+                                ou via ce formulaire
+                            </address>
 
 
+                        </section>
+                    </aside>
+
+                    <section class="col">
+
+                        <h2>Formulaire de contact</h2>
+
+                        <form class="row">
+                            <div class="col-7 form-floating mb-3">
+                                <input type="text" class="form-control" id="lname" placeholder="Votre nom" required>
+                                <label for="lname">Votre nom</label>
+                                <div class="invalid-feedback">
+                                    Veuillez saisir votre nom.
+                                </div>
+                            </div>
+                            <div class="col-5 form-floating mb-3">
+                                <input type="text" class="form-control" id="fname" placeholder="Votre prénom" required>
+                                <label for="fname">Votre prénom</label>
+                                <div class="invalid-feedback">
+                                    Veuillez saisir votre prénom.
+                                </div>
+                            </div>
+
+                            <div class="col-4 form-floating mb-3">
+                                <input type="tel" class="form-control" id="tel" placeholder="Votre téléphone" required>
+                                <label for="tel">Votre téléphone</label>
+                                <div class="invalid-feedback">
+                                    Veuillez saisir un numéro de téléphone valide.
+                                </div>
+                            </div>
+                            <div class="col-6 form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                                <label for="email">Votre email</label>
+                                <div class="invalid-feedback">
+                                    Veuillez saisir un email valide.
+                                </div>
+                            </div>
+                            <div class="col-12 form-floating mb-3">
+                                <input type="text" class="form-control" id="subject" placeholder="Sujet" required>
+                                <label for="subject">Sujet</label>
+                                <div class="invalid-feedback">
+                                    Veuillez saisir un sujet dans le champ de texte
+                                </div>
+                            </div>
+                            <div class="col-12 form-floating">
+                                <textarea class="form-control" placeholder="Votre message" id="message"
+                                    required></textarea>
+                                <label for="message">Votre message</label>
+                            </div>
+                            <div class="invalid-feedback">
+                                Veuillez saisir un message dans la zone de texte.
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Envoyer</button>
+                            </div>
+                        </form>
                     </section>
-                </aside>
-
-                <section class="col">
-
-                    <h2>Formulaire de contact</h2>
-
-                    <form class="row">
-                        <div class="col-7 form-floating mb-3">
-                            <input type="text" class="form-control" id="lname" placeholder="Votre nom" required>
-                            <label for="lname">Votre nom</label>
-                            <div class="invalid-feedback">
-                                Veuillez saisir votre nom.
-                            </div>
-                        </div>
-                        <div class="col-5 form-floating mb-3">
-                            <input type="text" class="form-control" id="fname" placeholder="Votre prénom" required>
-                            <label for="fname">Votre prénom</label>
-                            <div class="invalid-feedback">
-                                Veuillez saisir votre prénom.
-                            </div>
-                        </div>
-
-                        <div class="col-4 form-floating mb-3">
-                            <input type="tel" class="form-control" id="tel" placeholder="Votre téléphone" required>
-                            <label for="tel">Votre téléphone</label>
-                            <div class="invalid-feedback">
-                                Veuillez saisir un numéro de téléphone valide.
-                            </div>
-                        </div>
-                        <div class="col-6 form-floating mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="Votre email" required>
-                            <label for="email">Votre email</label>
-                            <div class="invalid-feedback">
-                                Veuillez saisir un email valide.
-                            </div>
-                        </div>
-                        <div class="col-12 form-floating mb-3">
-                            <input type="text" class="form-control" id="subject" placeholder="Sujet" required>
-                            <label for="subject">Sujet</label>
-                            <div class="invalid-feedback">
-                                Veuillez saisir un sujet dans le champ de texte
-                            </div>
-                        </div>
-                        <div class="col-12 form-floating">
-                            <textarea class="form-control" placeholder="Votre message" id="message" required></textarea>
-                            <label for="message">Votre message</label>
-                        </div>
-                        <div class="invalid-feedback">
-                            Veuillez saisir un message dans la zone de texte.
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-primary" type="submit">Envoyer</button>
-                        </div>
-                    </form>
-                </section>
+                </div>
             </div>
         </div>
+
         <div class="gMap mt-5">
         </div>
+
     </main>
 
     <!-- Bas de page -->
