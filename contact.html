@@ -38,8 +38,10 @@
             <nav class="navbar navbar-expand-xl w-100 position-absolute z-2 pt-0">
                 <div class="container-fluid">
                     <a class="navbar-brand m-0 p-0" href="index.html" aria-current="page">
-                        <img class="d-none d-sm-block" src="./assets/img/logo.png" alt="Le studio, sport & coaching">
-                        <img class="d-block d-sm-none" src="./assets/img/logo_small.webp" alt="Le studio, sport & coaching">
+                        <picture>
+                            <source media="(min-width: 576px)" srcset="./assets/img/logo.png">
+                            <img src="./assets/img/logo_small.webp" alt="Le studio, sport & coaching">
+                        </picture>
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
