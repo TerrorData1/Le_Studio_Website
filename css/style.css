@@ -38,7 +38,7 @@ ul li {
 */
 
 /* ==========================================================================
-  Custom
+  Custom Bootstrap
   ========================================================================== */
 
 .w-90 {
@@ -88,11 +88,6 @@ ul li {
     background-color: #141414;
 }
 
-.navbar-gold-hover-color .nav-link:is(:hover, :focus, .active, .show) {
-    color: white;
-    background-color: #CBAC6B;
-}
-
 .link-gold a,
 .link-hover-gold a:is(:hover, :focus, .active, .show) {
     color: #CBAC6B !important;
@@ -102,9 +97,49 @@ ul li {
     color: #373737 !important;
 }
 
-.nav-link svg {
-    height: 1.25rem;
+/* Link - Text Underline Effect */
+
+.tdu-transform-scale {
+    display: inline-block;
+    text-decoration: none;
 }
+
+.tdu-transform-scale:after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid black;
+    transform: scaleX(0.22);
+    transition: transform 250ms ease-in-out;
+}
+
+.tdu-transform-scale:hover:after {
+    transform: scaleX(1);
+}
+
+.tdu-transform-scale.tdu-fromLeft:after {
+    transform-origin: left;
+}
+
+.tdu-transform-scale.tdu-white:after {
+    border-color: white;
+}
+
+/* Custom for Activ */
+.activs .tdu-transform-scale:after {
+    padding-bottom: 0.625rem;
+}
+
+.activs .tdu-transform-scale:hover:after {
+    transform: scaleX(1.6);
+}
+
+/* ==========================================================================
+  Header
+  ========================================================================== */
+
+/*
+  Navbar
+  ========================================================================== */
 
 .nav_container {
     font-family: 'Oswald', sans-serif;
@@ -114,6 +149,15 @@ ul li {
 .navbar a {
     color: #fcfcfc;
     cursor: pointer;
+}
+
+.nav-link svg {
+    height: 1.25rem;
+}
+
+.navbar-gold-hover-color .nav-link:is(:hover, :focus, .active, .show) {
+    color: white;
+    background-color: #CBAC6B;
 }
 
 .dropdown-black-bg {
@@ -131,10 +175,29 @@ ul li {
     background-color: #141414 !important;
 }
 
+/* Burger Bouton and Close - Change color and remove border */
 
-/* ===============================================
+.navbar-toggler,
+.navbar-toggler:is(:focus, :active),
+.navbar-toggler-icon:focus,
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.btn-close {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgba(255, 255, 255, 1)'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}
+
+
+/*
   Carrousel
-  ===============================================*/
+  ========================================================================== */
 
 .circle-indicators.carousel-indicators [data-bs-target].active {
     border: 2px solid #fcfcfc;
@@ -172,31 +235,11 @@ ul li {
     text-transform: uppercase;
 }
 
-/* Burger Bouton and Close - Change color and remove border */
-
-.navbar-toggler,
-.navbar-toggler:is(:focus, :active),
-.navbar-toggler-icon:focus,
-.btn-close:focus {
-    outline: none;
-    box-shadow: none;
-    border: none;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-}
-
-.btn-close {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgba(255, 255, 255, 1)'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
-}
-
-
-/* ==========================================================================
-  Header - Background
+/*
+  Header Background
   ========================================================================== */
 
-#contact header,
+  #contact header,
 #presentation header {
     height: 500px;
     background-repeat: no-repeat;
@@ -216,7 +259,7 @@ ul li {
   Main
   ========================================================================== */
 
-/* Titre Section */
+/* Section Title */
 
 main h2 {
     font-size: 1.75rem;
@@ -259,43 +302,6 @@ main h2 {
 .activs-04 {
     background-image: url(../assets/img/activites/bg_activite_4.jpg);
 }
-
-/* Link - Text Underline Effect */
-
-.tdu-transform-scale {
-    display: inline-block;
-    text-decoration: none;
-}
-
-.tdu-transform-scale:after {
-    content: "";
-    display: block;
-    border-bottom: 3px solid black;
-    transform: scaleX(0.22);
-    transition: transform 250ms ease-in-out;
-}
-
-.tdu-transform-scale:hover:after {
-    transform: scaleX(1);
-}
-
-.tdu-transform-scale.tdu-fromLeft:after {
-    transform-origin: left;
-}
-
-.tdu-transform-scale.tdu-white:after {
-    border-color: white;
-}
-
-/* Custom for Activ */
-.activs .tdu-transform-scale:after {
-    padding-bottom: 0.625rem;
-}
-
-.activs .tdu-transform-scale:hover:after {
-    transform: scaleX(1.6);
-}
-
 
 /*
   Presentation
