@@ -32,13 +32,15 @@
 <body id="contact">
     <!-- Haut de page -->
 
-    <header class="position-relative">
+    <header class="bg-darkbrown">
 
-        <div class="nav_container w-90 position-relative m-auto fw-normal text-uppercase">
+        <div class="nav_container position-relative w-90 m-auto fw-normal text-uppercase">
             <nav class="navbar navbar-expand-xl w-100 position-absolute z-2 pt-0">
                 <div class="container-fluid">
-                    <a class="navbar-brand m-0 p-0" href="#"><img src="./assets/img/logo.png"
-                            alt="Le studio, sport & coaching"></a>
+                    <a class="navbar-brand m-0 p-0" href="index.html" aria-current="page">
+                        <img class="d-none d-sm-block" src="./assets/img/logo.png" alt="Le studio, sport & coaching">
+                        <img class="d-block d-sm-none" src="./assets/img/logo_small.webp" alt="Le studio, sport & coaching">
+                    </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
@@ -49,14 +51,14 @@
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <h5 class="offcanvas-title text-white-50" id="offcanvasNavbarLabel">Menu</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body justify-content-around">
                             <ul class="navbar-nav navbar-gold-hover-color">
                                 <li class="nav-item">
-                                    <a class="nav-link active py-custom px-4 text-nowrap" href="#">L'équipe</a>
+                                    <a class="nav-link py-custom px-4 text-nowrap" href="#">L'équipe</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link py-custom px-4 text-nowrap" href="#" role="button"
@@ -89,7 +91,7 @@
                                 </li>
                             </ul>
 
-                            <address class="navbar-nav align-items-center link-hover-gold">
+                            <address class="navbar-nav d-none d-xxl-flex align-items-center link-hover-gold">
                                 <div class="nav-item">
                                     <a class="nav-link d-flex align-items-center column-gap-1 p-0"
                                         href="tel:+33559478418">
@@ -103,7 +105,7 @@
                                 </div>
                             </address>
 
-                            <ul class="navbar-nav align-items-center column-gap-2 link-hover-gold">
+                            <ul class="navbar-nav d-none d-xl-flex align-items-center column-gap-2 link-hover-gold">
                                 <li class="nav-item">
                                     <a class="nav-link d-flex p-0" href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -133,7 +135,8 @@
                                 </li>
                             </ul>
 
-                            <div class="lang d-flex justify-content-center align-items-center pb-2 px-2 bg-gold">
+                            <div
+                                class="lang d-flex justify-content-center align-items-center mt-5 mt-xl-0 pb-2 px-2 bg-gold">
                                 <a href="404.html" class="link-goldgrey fw-semibold">EN</a>
                             </div>
                         </div>
@@ -143,102 +146,124 @@
         </div>
 
     </header>
-    
+
     <main>
-        <div class="py-5">
-            <div class="container py-5">
-                <div class="row">
-                    <aside class="col-4">
-                        <section>
-                            <h2>Nos coordonnées</h2>
-                            <h3>Studio Sport & Coaching</h3>
-                            <address>
-                                01 Allée Marie Politzer<br>
-                                64200 Biarritz
-                            </address>
+        <div class="container py-5">
+            <div class="row">
+                <aside class="col-12 col-md-4">
+                    <section>
+                        <h2 class="mb-5 mt-sm-4">Nos coordonnées</h2>
+                        <h3 class="mb-1">Studio Sport & Coaching</h3>
+                        <address>
+                            01 Allée Marie Politzer<br>
+                            64200 Biarritz
+                        </address>
 
-                            <h3>Téléphone</h3>
-                            <address>
-                                <a href="tel:+33559478418">05 59 47 84 18</a>
-                            </address>
+                        <h3 class="mt-4 mb-1">Téléphone</h3>
+                        <address>
+                            <a href="tel:+33559478418" class="text-black text-decoration-none">05 59 47 84 18</a>
+                        </address>
 
-                            <h3>Horaires</h3>
-                            <p>
-                                Du lundi au vendredi<br>
-                                de 8h à 14h, de 16h à 21h<br>
-                                Le samedi<br>
-                                de 10h à 13h
-                            </p>
+                        <h3 class="mt-4 mb-1">Horaires</h3>
+                        <p>
+                            Du lundi au vendredi<br>
+                            de 8h à 14h, de 16h à 21h<br>
+                            Le samedi<br>
+                            de 10h à 13h
+                        </p>
 
-                            <h3>Email</h3>
-                            <address>
-                                <a href="mailto:contact@studiobiarritz.com">contact (at) studiobiarritz.com</a><br>
-                                ou via ce formulaire
-                            </address>
+                        <h3 class="mt-4 mb-1">Email</h3>
+                        <address>
+                            <a href="mailto:contact@studiobiarritz.com" class="text-black text-decoration-none">contact
+                                (at) studiobiarritz.com</a><br>
+                            ou via ce formulaire
+                        </address>
 
 
-                        </section>
-                    </aside>
+                    </section>
+                </aside>
 
-                    <section class="col">
+                <section class="col-12 col-sm-8">
 
-                        <h2>Formulaire de contact</h2>
-
-                        <form class="row">
-                            <div class="col-7 form-floating mb-3">
-                                <input type="text" class="form-control" id="lname" placeholder="Votre nom" required>
-                                <label for="lname">Votre nom</label>
-                                <div class="invalid-feedback">
-                                    Veuillez saisir votre nom.
+                    <h2 class="mb-5 mt-4">Formulaire de contact</h2>
+                    <div class="container g-0">
+                        <form class="row text-uppercase">
+                            <div class="col-lg-7 mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0 rounded-0 bg-lightgrey" id="lname"
+                                        placeholder="Votre nom" required>
+                                    <label for="lname" class="p-start-5">Votre nom</label>
+                                    <div class="invalid-feedback">
+                                        Veuillez saisir votre nom.
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-5 form-floating mb-3">
-                                <input type="text" class="form-control" id="fname" placeholder="Votre prénom" required>
-                                <label for="fname">Votre prénom</label>
-                                <div class="invalid-feedback">
-                                    Veuillez saisir votre prénom.
+                            <div class="col-lg-5 mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0 rounded-0 bg-lightgrey" id="fname"
+                                        placeholder="Votre prénom" required>
+                                    <label for="fname">Votre prénom</label>
+                                    <div class="invalid-feedback">
+                                        Veuillez saisir votre prénom.
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="col-4 form-floating mb-3">
-                                <input type="tel" class="form-control" id="tel" placeholder="Votre téléphone" required>
-                                <label for="tel">Votre téléphone</label>
-                                <div class="invalid-feedback">
-                                    Veuillez saisir un numéro de téléphone valide.
+                            <div class="col-lg-5 mb-4">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control border-0 rounded-0 bg-lightgrey" id="tel"
+                                        placeholder="Votre téléphone" required>
+                                    <label for="tel">Votre téléphone</label>
+                                    <div class="invalid-feedback">
+                                        Veuillez saisir un numéro de téléphone valide.
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6 form-floating mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="Votre email" required>
-                                <label for="email">Votre email</label>
-                                <div class="invalid-feedback">
-                                    Veuillez saisir un email valide.
+                            <div class="col-lg-7 mb-4">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control border-0 rounded-0 bg-lightgrey" id="email"
+                                        placeholder="Votre email" required>
+                                    <label for="email">Votre email</label>
+                                    <div class="invalid-feedback">
+                                        Veuillez saisir un email valide.
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 form-floating mb-3">
-                                <input type="text" class="form-control" id="subject" placeholder="Sujet" required>
-                                <label for="subject">Sujet</label>
-                                <div class="invalid-feedback">
-                                    Veuillez saisir un sujet dans le champ de texte
+
+                            <div class="col-12 mb-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control border-0 rounded-0 bg-lightgrey" id="subject"
+                                        placeholder="Sujet" required>
+                                    <label for="subject">Sujet</label>
+                                    <div class="invalid-feedback">
+                                        Veuillez saisir un sujet dans le champ de texte
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 form-floating">
-                                <textarea class="form-control" placeholder="Votre message" id="message"
-                                    required></textarea>
-                                <label for="message">Votre message</label>
+
+                            <div class="col-12 mb-4-custom">
+                                <div class="form-floating">
+                                    <textarea class="form-control border-0 rounded-0 bg-lightgrey"
+                                        placeholder="Votre message" id="message" required></textarea>
+                                    <label for="message">Votre message</label>
+                                    <div class="invalid-feedback">
+                                        Veuillez saisir un message dans la zone de texte.
+                                    </div>
+                                </div>
                             </div>
-                            <div class="invalid-feedback">
-                                Veuillez saisir un message dans la zone de texte.
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary" type="submit">Envoyer</button>
+
+                            <div class="col-12 bg">
+                                <button
+                                    class="btn btn-lg button-hover-gold border-0 rounded-0 text-uppercase fw-bolder px-5"
+                                    type="submit">Envoyer</button>
                             </div>
                         </form>
-                    </section>
-                </div>
+                    </div>
+                </section>
             </div>
         </div>
 
-        <div class="gMap mt-5">
+        <div class="gMap d-none d-lg-block mt-5">
         </div>
 
     </main>

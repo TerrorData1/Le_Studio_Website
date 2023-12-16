@@ -30,13 +30,15 @@
 <body id="presentation">
     <!-- Haut de page -->
 
-    <header class="position-relative">
+    <header class="bg-darkbrown">
 
-        <div class="nav_container w-90 position-relative m-auto fw-normal text-uppercase">
+        <div class="nav_container position-relative w-90 m-auto fw-normal text-uppercase">
             <nav class="navbar navbar-expand-xl w-100 position-absolute z-2 pt-0">
                 <div class="container-fluid">
-                    <a class="navbar-brand m-0 p-0" href="index.html"><img src="./assets/img/logo.png"
-                            alt="Le studio, sport & coaching"></a>
+                    <a class="navbar-brand m-0 p-0" href="index.html" aria-current="page">
+                        <img class="d-none d-sm-block" src="./assets/img/logo.png" alt="Le studio, sport & coaching">
+                        <img class="d-block d-sm-none" src="./assets/img/logo_small.webp" alt="Le studio, sport & coaching">
+                    </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
@@ -47,7 +49,7 @@
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <h5 class="offcanvas-title text-white-50" id="offcanvasNavbarLabel">Menu</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
@@ -86,7 +88,7 @@
                                 </li>
                             </ul>
 
-                            <address class="navbar-nav align-items-center link-hover-gold">
+                            <address class="navbar-nav d-none d-xxl-flex align-items-center link-hover-gold">
                                 <div class="nav-item">
                                     <a class="nav-link d-flex align-items-center column-gap-1 p-0"
                                         href="tel:+33559478418">
@@ -100,7 +102,7 @@
                                 </div>
                             </address>
 
-                            <ul class="navbar-nav align-items-center column-gap-2 link-hover-gold">
+                            <ul class="navbar-nav d-none d-xl-flex align-items-center column-gap-2 link-hover-gold">
                                 <li class="nav-item">
                                     <a class="nav-link d-flex p-0" href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -130,7 +132,7 @@
                                 </li>
                             </ul>
 
-                            <div class="lang d-flex justify-content-center align-items-center pb-2 px-2 bg-gold">
+                            <div class="lang d-flex justify-content-center align-items-center mt-5 mt-xl-0 pb-2 px-2 bg-gold">
                                 <a href="404.html" class="link-goldgrey fw-semibold">EN</a>
                             </div>
                         </div>
@@ -180,7 +182,7 @@
                     <!-- carrousel slider -->
                     <div class="w-100 col mt-5 p-1 ml-1">
                         <div id="carouselExampleIndicators" class="carousel slide">
-                            <div class="carousel-indicators circle-indicators">
+                            <div class="carousel-indicators circle-indicators z-1">
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -189,11 +191,6 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="./assets/img/slider/slide_1.jpg" class="d-block h-100 w-100 m-xl-auto" alt="Slide 1">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h1 class="title hidden buggedImg">Lancez-vous avec l'offre <span>Entre Amies</span></h1>
-                                        <p class="subtitle">2 inscriptions simultanées = Un 3ème abonnement de 6 mois offert !</p>
-                                        <p class="call-to-action"><a class="btn btn-lg" href="#">Plus d'infos</a></p>
-                                    </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img src="./assets/img/slider/slide_2.jpg" class="d-block h-100 w-100 m-auto" alt="Slide 2">

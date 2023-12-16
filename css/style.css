@@ -28,14 +28,9 @@ header {
     text-transform: uppercase;
 }
 
-
 ul li {
     list-style: none;
 }
-
-/*
-  primary-color : 
-*/
 
 /* ==========================================================================
   Custom Bootstrap
@@ -78,6 +73,10 @@ ul li {
 
 .bg-goldgrey {
     background-color: #373737;
+}
+
+.bg-lightgrey {
+    background-color: #EDEDED;
 }
 
 .bg-darkbrown {
@@ -143,7 +142,7 @@ ul li {
 
 .nav_container {
     font-family: 'Oswald', sans-serif;
-    font-size: 17px;
+    font-size: 1.063rem;
 }
 
 .navbar a {
@@ -155,6 +154,8 @@ ul li {
     height: 1.25rem;
 }
 
+.button-hover-gold,
+.button-hover-gold:is(:hover, :focus, .active, .show),
 .navbar-gold-hover-color .nav-link:is(:hover, :focus, .active, .show) {
     color: white;
     background-color: #CBAC6B;
@@ -199,6 +200,28 @@ ul li {
   Carrousel
   ========================================================================== */
 
+.title-custom {
+    font-weight: 500;
+    font-size: clamp(1rem, 0.7019rem + 1.2719vw, 2.5rem);
+    transform: translateX(-4vw);
+}
+
+/* Clamp: clamp(minimum, preferred, maximum);
+   Source: https://developer.mozilla.org/fr/docs/Web/CSS/clamp */
+
+.title-custom span {
+    display: block;
+    color: #CBAC6B;
+    font-size: clamp(1rem, 0.0064rem + 4.2395vw, 6rem);
+    transform: translateX(8vw);
+}
+
+.subtitle-custom {
+    font-size: clamp(1rem, 0.8261rem + 0.7419vw, 1.875rem);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 .circle-indicators.carousel-indicators [data-bs-target].active {
     border: 2px solid #fcfcfc;
     background-color: transparent;
@@ -218,20 +241,8 @@ ul li {
     transform: translateY(-50%);
 }
 
-.carousel-caption h1 {
-    font-size: 52px;
-}
-
-.carousel-caption .hidden {
-    visibility: hidden;
-}
-
-.carousel-caption .buggedImg {
-    margin-bottom: 225px;
-}
-
 .carousel-caption .call-to-action {
-    margin-top: 100px;
+    margin-top: 4%;
     text-transform: uppercase;
 }
 
@@ -239,21 +250,29 @@ ul li {
   Header Background
   ========================================================================== */
 
-  #contact header,
-#presentation header {
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+header {
+    min-height: 5.625rem;
 }
 
-#contact header {
-    background-image: url(../assets/img/visuel/header_contact.jpg);
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #contact header,
+    #presentation header {
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #contact header {
+        background-image: url(../assets/img/visuel/header_contact.jpg);
+    }
+    
+    #presentation header {
+        background-image: url(../assets/img/visuel/header_presentation.jpg);
+    }
 }
 
-#presentation header {
-    background-image: url(../assets/img/visuel/header_presentation.jpg);
-}
 
 /* ==========================================================================
   Main
@@ -314,6 +333,24 @@ main h2 {
 /*
   Contact
   ========================================================================== */
+
+
+#contact aside h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: initial;
+    font-size: initial;
+    font-weight: 700;
+}
+
+#contact textarea {
+    height: 220px;
+}
+
+/* Fix Label on Mobile Menu */
+
+.form-floating > label {
+    z-index: 1;
+}
 
 /*
   Google Maps
