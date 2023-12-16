@@ -45,6 +45,19 @@ ul li {
     width: 90%;
 }
 
+.mb-4-custom {
+    margin-bottom: 2rem;
+}
+
+.mb-6 {
+    margin-bottom: 3.75rem;
+}
+
+.my-6 {
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+}
+
 .ff-oswald {
     font-family: 'Oswald', sans-serif;
 }
@@ -199,10 +212,15 @@ ul li {
     background-image: url(../assets/img/visuel/header_presentation.jpg);
 }
 
-#contact main h2,
-#presentation main h2 {
-    font-size: 28px;
-    padding-bottom: 16px;
+/* ==========================================================================
+  Main
+  ========================================================================== */
+
+/* Titre Section */
+
+main h2 {
+    font-size: 1.75rem;
+    padding-bottom: 1rem;
     background: bottom center no-repeat url(../assets/img/bg_titre.jpg);
 }
 
@@ -210,18 +228,20 @@ ul li {
     background-position: bottom left;
 }
 
-/* ==========================================================================
-  Main
-  ========================================================================== */
-
 /*
   Activities
   ========================================================================== */
 
 .activs div {
+    padding: 3rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.activs div img {
+    margin-top: 5.875rem;
+    margin-bottom: 1.875rem;
 }
 
 .activs-01 {
@@ -239,6 +259,43 @@ ul li {
 .activs-04 {
     background-image: url(../assets/img/activites/bg_activite_4.jpg);
 }
+
+/* Link - Text Underline Effect */
+
+.tdu-transform-scale {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.tdu-transform-scale:after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid black;
+    transform: scaleX(0.22);
+    transition: transform 250ms ease-in-out;
+}
+
+.tdu-transform-scale:hover:after {
+    transform: scaleX(1);
+}
+
+.tdu-transform-scale.tdu-fromLeft:after {
+    transform-origin: left;
+}
+
+.tdu-transform-scale.tdu-white:after {
+    border-color: white;
+}
+
+/* Custom for Activ */
+.activs .tdu-transform-scale:after {
+    padding-bottom: 0.625rem;
+}
+
+.activs .tdu-transform-scale:hover:after {
+    transform: scaleX(1.6);
+}
+
 
 /*
   Presentation
