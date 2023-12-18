@@ -384,6 +384,21 @@ main h2 {
 
 
 
+.imgcards:hover::after{
+    content:'\f004 \A0  60 \A0 \A0 \f075 \A0 140';
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    color: white;
+    display: flex;
+    }
+
+
 
 
 /*footer underline*/
