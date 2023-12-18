@@ -271,6 +271,8 @@ header {
     #presentation header {
         background-image: url(../assets/img/visuel/header_presentation.jpg);
     }
+
+
 }
 
 
@@ -375,4 +377,26 @@ main h2 {
 
 .insta-slider > div > a:hover {
     opacity: 0.5;
+}
+
+
+
+
+
+/*footer underline*/
+
+
+.line::before {  
+    content:"";
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    left: -8px;
+    border-bottom: 2px solid white;
+    width: 25px;
+
+}
+
+.line:hover::before{
+border-color: #CBAC6B
 }
