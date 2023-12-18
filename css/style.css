@@ -273,6 +273,9 @@ header {
     }
 
 
+    
+
+
 }
 
 
@@ -399,4 +402,19 @@ main h2 {
 
 .line:hover::before{
 border-color: #CBAC6B
+}
+
+
+@media screen and (max-width: 1530px){
+    
+    .galeriefoot{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 816px){
+    
+    .galeriefoot{
+        height: 400px;
+    }
 }
