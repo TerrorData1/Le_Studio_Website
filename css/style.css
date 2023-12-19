@@ -8,10 +8,6 @@
   Base
   ========================================================================== */
 
-/* * {
-    border: 1px solid red;
-} */
-
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -206,9 +202,6 @@ ul li {
     transform: translateX(-4vw);
 }
 
-/* Clamp: clamp(minimum, preferred, maximum);
-   Source: https://developer.mozilla.org/fr/docs/Web/CSS/clamp */
-
 .title-custom span {
     display: block;
     color: #CBAC6B;
@@ -271,13 +264,7 @@ header {
     #presentation header {
         background-image: url(../assets/img/visuel/header_presentation.jpg);
     }
-
-
-    
-
-
 }
-
 
 /* ==========================================================================
   Main
@@ -339,7 +326,6 @@ main h2 {
   Contact
   ========================================================================== */
 
-
 #contact aside h3 {
     font-family: 'Open Sans', sans-serif;
     text-transform: initial;
@@ -360,6 +346,7 @@ main h2 {
 /*
   Google Maps
   ========================================================================== */
+
 .gMap {
     height: 668px;
     background: center / cover no-repeat url(../assets/img/map.webp);
@@ -369,11 +356,6 @@ main h2 {
   Footer
   ========================================================================== */
 
-.trait {
-    width: 26px;
-    position: relative;
-}
-
 .galeriefoot {
     height: 300px;
 }
@@ -381,8 +363,6 @@ main h2 {
 .insta-slider > div > a:hover {
     opacity: 0.5;
 }
-
-
 
 .imgcards:hover::after{
     content:'\f004 \A0  60 \A0 \A0 \f075 \A0 140';
@@ -396,13 +376,9 @@ main h2 {
     font-family: "Font Awesome 6 Free";
     color: white;
     display: flex;
-    }
+}
 
-
-
-
-/*footer underline*/
-
+/* footer underline */
 
 .line::before {  
     content:"";
@@ -420,15 +396,13 @@ border-color: #CBAC6B
 }
 
 
-@media screen and (max-width: 1530px){
-    
+@media screen and (max-width: 1530px){   
     .galeriefoot{
         height: 200px;
     }
 }
 
 @media screen and (max-width: 816px){
-    
     .galeriefoot{
         height: 400px;
     }
