@@ -28,8 +28,6 @@ function addCLass(element, regex, value) {
 lnameInput.addEventListener('input', (e) => { addCLass(lnameInput, UserRegex, e.target.value) });
 fnameInput.addEventListener('input', (e) => { addCLass(fnameInput, UserRegex, e.target.value) });
 
-console.log(fnameInput);
-
 phoneInput.addEventListener('input', (e) => {
     let phoneNumber = e.target.value;
     // Supprime les espaces dans le numéro
