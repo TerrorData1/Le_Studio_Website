@@ -1,9 +1,12 @@
 const form = document.querySelector('form');
 const emailInput = document.querySelector('input[type=email]');
 const phoneInput = document.querySelector('input[type=tel]');
+const firstName = document.querySelector('#fname');
+const lastName = document.querySelector('#lname');
 
 const EmailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const PhoneNumberRegex = /^\+(?:\d{1,3})?\d{10,14}$/;
+const NameRegex = /^[a-z ,.'-]+$/i;
 
 phoneInput.addEventListener('input', (e)=>{
     if (PhoneNumberRegex.test(phoneInput.value)) {
