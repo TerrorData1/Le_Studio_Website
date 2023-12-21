@@ -45,7 +45,6 @@ fnameInput.addEventListener('input', (e) => {
 });
 
 phoneInput.addEventListener('input', (e) => {
-    ;
     let phoneNumber = e.target.value;
     // Supprime les espaces dans le numéro
     phoneNumber = phoneNumber.replace(/ /g, '');
@@ -74,7 +73,7 @@ msgTextArea.addEventListener('input', (e) => {
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    console.log(fnameValid && lnameValid && phoneValid && emailValid && subjectValid && msgValid);
+    // console.log(fnameValid && lnameValid && phoneValid && emailValid && subjectValid && msgValid);
 
     if (fnameValid && lnameValid && phoneValid && emailValid && subjectValid && msgValid) {
         // Function sendMail
@@ -82,7 +81,7 @@ form.addEventListener('submit', (e) => {
             Host : "smtp.elasticemail.com",
             Username : "maillotjacques13@gmail.com",
             Password : "ABF36EADED0E1127FC735E9DD13AA06EE774",
-            To : 'maillotjacques13@gmail.com',
+            To : "hilltractors@yopmail.com",
             From : "maillotjacques13@gmail.com",
             Subject : "This is the subject",
             Body : "And this is the body"
