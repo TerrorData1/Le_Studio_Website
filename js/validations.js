@@ -28,7 +28,7 @@ let msgValue = "";
 
 // Expressions régulières pour la validation (Regex) :
 // Ces expressions régulières sont utilisées pour valider les champs correspondants du formulaire.
-const UserRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ]+$/u;
+const UserRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ-]+$/u;
 const EmailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const PhoneNumberRegex = /^\+(?:\d{1,3})?\d{10}$/;
 const SubjectRegex = /^[^<>{}$]{3,200}$/;
