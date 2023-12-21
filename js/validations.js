@@ -76,18 +76,18 @@ form.addEventListener('submit', (e) => {
 
     console.log(fnameValid && lnameValid && phoneValid && emailValid && subjectValid && msgValid);
 
-    // if (fnameValid && lnameValid && phoneValid && emailValid && subjectValid && msgValid) {
-    //     // Function sendMail
-    //     Email.send({
-    //         Host : "smtp.elasticemail.com",
-    //         Username : "username",
-    //         Password : "password",
-    //         To : 'hilltractors@maildrop.cc',
-    //         From : "you@isp.com",
-    //         Subject : "This is the subject",
-    //         Body : "And this is the body"
-    //     }).then(
-    //       message => alert(message)
-    //     );
-    // }
+    if (fnameValid && lnameValid && phoneValid && emailValid && subjectValid && msgValid) {
+        // Function sendMail
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "maillotjacques13@gmail.com",
+            Password : "ABF36EADED0E1127FC735E9DD13AA06EE774",
+            To : 'maillotjacques13@gmail.com',
+            From : "maillotjacques13@gmail.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+    }
 })
