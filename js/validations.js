@@ -13,6 +13,13 @@ let emailValid = false;
 let subjectValid = false;
 let msgValid = false;
 
+let fnameValue = "";
+let lnameValue = "";
+let phoneValue = "";
+let emailValue = "";
+let subjectValue = "";
+let msgValue = "";
+
 // Regex
 const UserRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ]+$/u;
 const EmailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -36,12 +43,24 @@ function addCLass(element, regex, value, valid) {
 // Execute la fonction addClass(element, regex, value)
 lnameInput.addEventListener('input', (e) => {
     addCLass(lnameInput, UserRegex, e.target.value, lnameValid);
-    lnameInput.classList.contains('is-valid') ? lnameValid = true : lnameValid = false;
+    if (lnameInput.classList.contains('is-valid')){
+        lnameValid = true;
+        lnameValue = e.target.value;
+    } else{
+        lnameValid = false;
+        lnameValue = "";
+    } 
 });
 
 fnameInput.addEventListener('input', (e) => {
     addCLass(fnameInput, UserRegex, e.target.value, fnameValid);
-    fnameInput.classList.contains('is-valid') ? fnameValid = true : fnameValid = false;
+    if (fnameInput.classList.contains('is-valid')){
+        fnameValid = true;
+        fnameValue = e.target.value;
+    } else {
+        fnameValid = false;
+        fnameValue = "";
+    } 
 });
 
 phoneInput.addEventListener('input', (e) => {
@@ -52,28 +71,50 @@ phoneInput.addEventListener('input', (e) => {
     phoneNumber = phoneNumber.replace(/^0/, '+33');
     // Execute la fonction addClass
     addCLass(phoneInput, PhoneNumberRegex, phoneNumber, phoneValid);
-    phoneInput.classList.contains('is-valid') ? phoneValid = true : phoneValid = false;
+    if (phoneInput.classList.contains('is-valid')) {
+        phoneValid = true;
+        phoneValue = e.target.value;
+    } else {
+        phoneValid = false;
+        phoneValid = "";    
+    }
 })
 
 emailInput.addEventListener('input', (e) => {
     addCLass(emailInput, EmailRegex, e.target.value, emailValid);
-    emailInput.classList.contains('is-valid') ? emailValid = true : emailValid = false;
+    if (emailInput.classList.contains('is-valid')) {
+        emailValid = true;
+        emailValue = e.target.value;
+    } else {
+        emailValid = false;
+        emailValue = "";
+    }
 });
 
 subjectInput.addEventListener('input', (e) => {
     addCLass(subjectInput, SubjectRegex, e.target.value, subjectValid);
-    subjectInput.classList.contains('is-valid') ? subjectValid = true : subjectValid = false;
+    if (subjectInput.classList.contains('is-valid')) {
+        subjectValid = true;
+        subjectValue = e.target.value;
+    } else {
+        subjectValid = false;
+        subjectValue = "";
+    } 
 });
 
 msgTextArea.addEventListener('input', (e) => {
     addCLass(msgTextArea, MessageRegex, e.target.value, msgValid);
-    msgTextArea.classList.contains('is-valid') ? msgValid = true : msgValid = false;
+    if (msgTextArea.classList.contains('is-valid')) {
+        msgValid = true;
+        msgValue = e.target.value;
+    } else {
+        msgValid = false;
+        msgValue = "";
+    }
 });
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-
-    // console.log(fnameValid && lnameValid && phoneValid && emailValid && subjectValid && msgValid);
 
     if (fnameValid && lnameValid && phoneValid && emailValid && subjectValid && msgValid) {
         // Function sendMail
@@ -82,11 +123,12 @@ form.addEventListener('submit', (e) => {
             Username : "maillotjacques13@gmail.com",
             Password : "ABF36EADED0E1127FC735E9DD13AA06EE774",
             To : "hilltractors@yopmail.com",
-            From : "maillotjacques13@gmail.com",
-            Subject : "This is the subject",
-            Body : "And this is the body"
-        }).then(
-          message => alert(message)
-        );
+            From : emailValue,
+            Subject : subjectValue,
+            Body : `Prénom : ${fnameValue} <br>
+                    Nom : ${lnameValue} <br>
+                    Téléphone : ${phoneValue}<br>
+                    Message : ${msgValue}`
+        }).then(message => message == 'OK' && location.reload()); // Si Formulaire valide, recharge la page
     }
 })
